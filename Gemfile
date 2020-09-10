@@ -3,9 +3,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 
-
 #gem for streamlining usage of the flickr API
-gem 'flickraw'
+gem 'flickr', '~> 2.0', '>= 2.0.2'
+
+#for ENV variables
+gem 'figaro'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
